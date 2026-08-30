@@ -2,7 +2,12 @@
   "manifest_version": 3,
   "name": "Google Forms Auto-Fill",
   "version": "1.0",
-  "description": "Auto-fills basic details on Google Forms and prevents double filling.",
+  "description": "Auto-fills basic details on Google Forms and prevents double filling. Created by Rakesh Bangra.",
+  "icons": {
+    "16": "icon.jpg",
+    "48": "icon.jpg",
+    "128": "icon.jpg"
+  },
   "permissions": [
     "storage",
     "activeTab",
@@ -16,7 +21,12 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Form Settings"
+    "default_title": "Form Settings",
+    "default_icon": {
+      "16": "icon.jpg",
+      "48": "icon.jpg",
+      "128": "icon.jpg"
+    }
   },
   "content_scripts": [
     {
