@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Google Forms Auto-Fill",
+  "version": "1.0",
+  "description": "Auto-fills basic details on Google Forms and prevents double filling.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://docs.google.com/forms/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Form Settings"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://docs.google.com/forms/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
